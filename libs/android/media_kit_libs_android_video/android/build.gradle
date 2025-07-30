@@ -58,10 +58,10 @@ task downloadDependencies(type: Exec) {
 
         // Download all *.jar dependencies & verify their MD5 checksums.
         def filesToDownload = [
-            ["url": "https://github.com/azeek/libmpv-android-video-build/releases/download/20250730/full-arm64-v8a.jar", "md5": "ec347406363545984a6c0eee9ea6c50a", "destination": file("$buildDir/20250730/full-arm64-v8a.jar")],
-            ["url": "https://github.com/azeek/libmpv-android-video-build/releases/download/20250730/full-armeabi-v7a.jar", "md5": "8d3cb3a440e24d58a31ccfb9fbb3eb0b", "destination": file("$buildDir/20250730/full-armeabi-v7a.jar")],
-            ["url": "https://github.com/azeek/libmpv-android-video-build/releases/download/20250730/full-x86_64.jar", "md5": "51d732e49722de51b827997c805269df", "destination": file("$buildDir/20250730/full-x86_64.jar")],
-            ["url": "https://github.com/azeek/libmpv-android-video-build/releases/download/20250730/full-x86.jar", "md5": "9570458bfd6a3b7fc61e79d442211597", "destination": file("$buildDir/20250730/full-x86.jar")]
+            ["url": "https://github.com/azeek/libmpv-android-video-build/releases/download/20250730/default-arm64-v8a.jar", "md5": "08cd77bca265a441837e35f78c054aee", "destination": file("$buildDir/20250730/default-arm64-v8a.jar")],
+            ["url": "https://github.com/azeek/libmpv-android-video-build/releases/download/20250730/default-armeabi-v7a.jar", "md5": "999711ce2992a91f41b1454dd62d36f9", "destination": file("$buildDir/20250730/default-armeabi-v7a.jar")],
+            ["url": "https://github.com/azeek/libmpv-android-video-build/releases/download/20250730/default-x86_64.jar", "md5": "be7afd04f4c65e3439fe2dd438fd57ef", "destination": file("$buildDir/20250730/default-x86_64.jar")],
+            ["url": "https://github.com/azeek/libmpv-android-video-build/releases/download/20250730/default-x86.jar", "md5": "9339082fd52b09b5f3537f68a93ba107", "destination": file("$buildDir/20250730/default-x86.jar")]
         ]
 
         filesToDownload.each { fileInfo ->
